@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS_Ej_BreakingBoot.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerpart1">
+            <div class="button1">¡Haz tu pedido!</div>
+            <div id="menu">
+                <ul id="list">
+                    <li class="option">PÁGINA PRINCIPAL</li>
+                    <li class="option">BÚSQUEDA</li>
+                    <li class="option">ACERCA DE</li>
+                </ul>
+            </div>
+        </div>
+        <div id="headerpart2">
+            <div>
+                <img id="logoHamb" src=".\iconos\burger0.png" alt="Logo hamburgueseria">
+                <h1 class="headertitle">BootDonald's</h1>
+                <img id="logoHamb" src=".\iconos\burger0.png" alt="Logo hamburgueseria">
+            </div>
+            <div><span class="headersubtitle"> La Mejor Hamburguesería de Bilbao <span class="headersubtitle"
+                        style="color: red;"> ~ Since 2021 ~</span></div>
+    </header>
+    <main>
+        <div>
+            <h1 class="maintitle">¡Haz tu pedido!</h1>
+            <div id="threeoptions"> <!-- Opciones -->
+                <button class="choosetype menus">
+                    <div>
+                        <img src=".\iconos\menu2.png" alt="menu2">
+                        <p>Menús</p>
+                    </div>
+                </button>
+                <button class="choosetype burgers">
+                    <div>
+                        <img src=".\iconos\burger5.png" alt="burger5">
+                        <p>Hamburguesas</p>
+                    </div>
+                </button>
+                <button class="choosetype bebidas">
+                    <div>
+                        <img src=".\iconos\bebida1.png" alt="bebida1">
+                        <img class="beb" src=".\iconos\bebida4.png" alt="bebida4">
+                        <p>Bebidas</p>
+                    </div>
+                </button>
+            </div>
+            <div class="productblockAll">
+                <div class="typeAll menus"> <!-- Menus -->
+                    <div><h2 class="grupoproductssubtitle">Menús</h2></div>
+                    <div class="productblockhoriz">
+                        <div class="productblock" idName="Grand Big Boot"> <!--  -->
+                            <div class="imgcontainer">
+                                <img src=".\iconos\menu1.png" alt="Menu1">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Insertar texto</h2>
+                                <div>
+                                    <span class="price">8.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="Grand Big Boot">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="menu1">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock" idName="Big Boot">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\menu2.png" alt="Menu2">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Insertar texto</h2>
+                                <div>
+                                    <span class="price">8</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="Big Boot">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="menu2">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock" idName="BootPollo">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\menu3.png" alt="Menu3">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Insertar texto</h2>
+                                <div>
+                                    <span class="price">7.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="BootPollo">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="menu3">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productblockhoriz">
+                        <div class="productblock" idName="Cuarto de Libra">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\menu4.png" alt="Menu4">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Insertar texto</h2>
+                                <div>
+                                    <span class="price">7</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="Cuarto de Libra">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="menu4">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock" idName="BootRoyal Deluxe">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\menu5.png" alt="Menu5">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Insertar texto</h2>
+                                <div>
+                                    <span class="price">7</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="BootRoyal Deluxe">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="menu5">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hamburguesas -->
+                <div class="typeAll burgers"> 
+                    <div><h2 class="grupoproductssubtitle">Hamburguesas</h2></div>
+                    <div class="productblockhoriz">
+                        <div class="productblock burger1">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\burger1.png" alt="burger1">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Grand Big Boot</h2>
+                                <div>
+                                    <span class="price">6</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="burger1">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="burger1">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock burger2">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\burger2.png" alt="burger2">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Big Boot</h2>
+                                <div>
+                                    <span class="price">5.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="burger2">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="burger2">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock burger3">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\burger3.png" alt="burger3">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Boot Pollo</h2>
+                                <div>
+                                    <span class="price">5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="burger3">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="burger3">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productblockhoriz">
+                        <div class="productblock burger4">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\burger4.png" alt="burger4">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Cuarto de Libra</h2>
+                                <div>
+                                    <span class="price">4.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="burger4">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="burger4">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock burger5">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\burger5.png" alt="burger5">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">BootRoyal Deluxe</h2>
+                                <div>
+                                    <span class="price">4.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="burger5">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="burger5">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bebidas -->
+                <div class="typeAll bebidas"> 
+                    <div><h2 class="grupoproductssubtitle">Bebidas</h2></div>
+                    <div class="productblockhoriz">
+                        <div class="productblock bebida1">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\bebida1.png" alt="bebida1">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Coca-Cola</h2>
+                                <div>
+                                    <span class="price">2</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="bebida1">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="bebida1">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock bebida2">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\bebida2.png" alt="bebida2">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Fanta</h2>
+                                <div>
+                                    <span class="price">2</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="bebida2">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="bebida2">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productblock bebida3">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\bebida3.png" alt="bebida3">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Agua</h2>
+                                <div>
+                                    <span class="price">1</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="bebida3">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="bebida3">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productblockhoriz">
+                        <div class="productblock bebida4">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\bebida4.png" alt="bebida4">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Cerveza</h2>
+                                <div>
+                                    <span class="price">2.5</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="bebida4">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="bebida4">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Patatas -->
+                <div class="typeAll patatas"> 
+                    <div><h2 class="grupoproductssubtitle">Patatas</h2></div>
+                    <div class="productblockhoriz">
+                        <div class="productblock patatas">
+                            <div class="imgcontainer">
+                                <img src=".\iconos\patatas.png" alt="patatas">
+                            </div>
+                            <div class="textblock">
+                                <h2 class="productsubtitle">Patatas</h2>
+                                <div>
+                                    <span class="price">1</span><span> €</span>
+                                </div>
+                                <div class="optionsblock">
+                                    <button class="anadir" idName="patatas1">Añadir producto</button>
+                                    <!-- <button class="quitar" idName="patatas1">Quitar producto</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="finishcontainer">
+                <button class="finish">Finalizar pedido</button>
+            </div>
+        </div>
+
+        <div id="cestablock0">
+            <div id="cestablock1">
+                <!--background 2-->
+                <h1 class="maintitle2">Tu pedido</h1>
+                <div class="cestablock2">
+                    <!--todos-->
+                    <div class="cestablock3">
+                        <div>
+                            <span>Nº de brochas seleccionadas: </span><span class="numBrochas">0</span>
+                        </div>
+                        <div class="whiteblockBrochas"></div>
+                    </div>
+                    <div class="cestablock3">
+                        <div>
+                            <span>Nº de llaves seleccionadas: </span><span class="numLlaves">0</span>
+                        </div>
+                        <div class="whiteblockLlaves"></div>
+                    </div>
+                    <div class="cestablock3">
+                        <div>
+                            <span>Nº de martillos seleccionados: </span><span class="numMartillos">0</span>
+                        </div>
+                        <div class="whiteblockMartillos"></div>
+                    </div>
+                    <div class="cestablock3">
+                        <div>
+                            <span>Nº de troncos seleccionados: </span><span class="numTroncos">0</span>
+                        </div>
+                        <div class="whiteblockTroncos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img id="logoHamb" src=".\iconos\burger0.png" alt="Logo burger">
+        <div id="footertextblock">
+            <p class="plaintext">(C) All Rights Reserved.</p>
+            <span class="plaintext"> Created by </span><span class="plaintext" style="color:red">AOE Bootcamp
+            </span><span class="plaintext">Images: </span><span class="plaintext" style="color:red">Google Images</span>
+        </div>
+    </footer>
+
+<!-- --------------------------------------------------------- -->
+
+    <script>
+        let productos = {
+            menus: {
+                'Grand Big Boot': 8.5,
+                'Big Boot': 8,
+                'BootPollo': 7.50,
+                'Cuarto de libra': 7,
+                'BootRoyal Deluxe': 7
+            },
+            burgers: {
+                'Grand Big Boot': 6,
+                'Big Boot': 5.5,
+                'BootPollo': 5,
+                'Cuarto de libra': 4.5,
+                'BootRoyal Deluxe': 4.5
+            },
+            drinks: {
+                'CocaCola': 2,
+                'Fanta': 2,
+                'Agua': 1,
+                'Cerveza': 2.5
+            },
+            fries: 1,
+        };
+
+
+        // // Al cargar la pág al principio, que deshabilite todos los botones de Quitar producto.
+        // for (i=0; i<document.querySelectorAll(".quitar").length; i++){
+        //     document.querySelectorAll(".quitar")[i].disabled = true;
+        // }
+
+        // Al cargar la pág al principio, quitamos display de todo salvo las 3 opciones a elegir.
+        ////// querySelectorAll devuelve un array, por eso lo recorremos con un for!!
+        for (i=0; i<document.querySelectorAll(".typeAll").length; i++){
+            document.querySelectorAll(".typeAll")[i].style.display = "none";
+        }
+        document.querySelector("#finishcontainer").style.display = "none";
+        document.querySelector("#cestablock0").style.display = "none";
+
+        
+        
+        for (i=0; i<document.querySelectorAll(".typeAll.menus .productsubtitle").length; i++){
+            document.querySelector(".typeAll.menus .productsubtitle")[i].innerHTML=Object.keys(productos.menus)[i];
+        }    
+        
+        
+        
+            //    document.querySelector(`#total${i}`).innerHTML 
+
+
+        // document.querySelector(".productblock.menu2").innerHTML=Object.keys(productos.menus)[1];
+        // document.querySelector(".productblock.menu3").innerHTML=Object.keys(productos.menus)[2];
+        // document.querySelector(".productblock.menu4").innerHTML=Object.keys(productos.menus)[3];
+        // document.querySelector(".productblock.menu5").innerHTML=Object.keys(productos.menus)[4];
+        // document.querySelector(".productblock.burger1").innerHTML=Object.keys(productos.burgers)[0];
+        // document.querySelector(".productblock.burger2").innerHTML=Object.keys(productos.burgers)[1];
+        // document.querySelector(".productblock.burger3").innerHTML=Object.keys(productos.burgers)[2];
+        // document.querySelector(".productblock.burger4").innerHTML=Object.keys(productos.burgers)[3];
+        // document.querySelector(".productblock.burger5").innerHTML=Object.keys(productos.burgers)[4];
+        // document.querySelector(".productblock.bebida1").innerHTML=Object.keys(productos.drinks)[0];
+        // document.querySelector(".productblock.bebida2").innerHTML=Object.keys(productos.drinks)[1];
+        // document.querySelector(".productblock.bebida3").innerHTML=Object.keys(productos.drinks)[2];
+        // document.querySelector(".productblock.bebida4").innerHTML=Object.keys(productos.drinks)[3];
+
+
+
+
+        
+        
+        //Cuando clickamos una opcion, tienen que estar todas tapadas salvo el bloque correspondiente de esa opcion.
+        ///// Elegimos la opcion Menus.
+        document.querySelector(".choosetype.menus").addEventListener("click", function () {
+            for (i=0; i<document.querySelectorAll(".typeAll").length; i++){
+                document.querySelectorAll(".typeAll")[i].style.display = "none";
+            }
+            document.querySelector(".typeAll.menus").style.display = "flex";    
+        })
+
+
+
+/////coger el dato de qué menu es!!!!!!!
+                //--------element.getAttribute(nombreAtributo)
+                
+            //     for (i=0; i<document.querySelectorAll(".typeAll").length; i++){
+            //         document.querySelectorAll(".typeAll")[i].style.display = "none";
+            //     }
+            //     document.querySelector(".typeAll.menus").style.display = "flex";
+            // })
+           ///// Elegimos el menú.
+
+            debugger;
+            let varnumMenu
+            let anadir = document.querySelectorAll(".anadir");
+            for (let i=0; i<anadir.length; i++){
+                anadir[i].addEventListener("click", function () {
+                    varnumMenu = this.getAttribute("numMenu"); // "this" hace referencia al padre (el button i)
+                    ///funcion(this....)
+                })
+            }
+            console.log(varnumMenu);
+
+
+        ///// Elegimos la opcion Burgers.
+        document.querySelector(".choosetype.burgers").addEventListener("click", function () {
+            for (i=0; i<document.querySelectorAll(".typeAll").length; i++){
+                document.querySelectorAll(".typeAll")[i].style.display = "none";
+            }
+            document.querySelector(".typeAll.burgers").style.display = "flex";
+        })
+        ///// Elegimos la opcion Bebidas.
+        document.querySelector(".choosetype.bebidas").addEventListener("click", function () {
+            for (i=0; i<document.querySelectorAll(".typeAll").length; i++){
+                document.querySelectorAll(".typeAll")[i].style.display = "none";
+            }
+            document.querySelector(".typeAll.bebidas").style.display = "flex";
+        })
+
+
+
+
+
+
+        // arrayMenus=".typeAll."+Object.keys(productos)[0];
+        // document.querySelector(arrayMenus).style.display = "none";
+
+
+        // document.querySelector(".typeAll.menus, .typeAll.burgers, .typeAll.bebidas, .typeAll.patatas").style.display = "none";
+        
+        
+
+
+
+
+        let arrayMenus = [];
+        for (let i=0; i<Object.keys(productos.menus).length; i++){
+            arrayMenus.push(Object.keys(productos.menus)[i]); 
+        }
+        console.log(arrayMenus);
+        let arrayMenusPrices = [];
+        for (let i=0; i<Object.values(productos.menus).length; i++){
+            arrayMenusPrices.push(Object.values(productos.menus)[i]); 
+        }
+        console.log(arrayMenusPrices);
+
+        // arrayMenus=".typeAll."+Object.keys(productos)[0];
+        // document.querySelector(arrayMenus).style.display = "none";
+        
+        // document.querySelector(".typeAll.burgers").style.display = "none";
+
+        // choosetype
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.querySelector(".quitarBrocha").disabled = true;
+        document.querySelector(".quitarLlave").disabled = true;
+        document.querySelector(".quitarMartillo").disabled = true;
+        document.querySelector(".quitarTronco").disabled = true;
+
+        let clicksBrocha = 0;
+        let clicksLlave = 0;
+        let clicksMartillo = 0;
+        let clicksTronco = 0;
+        // AÑADIR al contador: Numeros y Logos
+        document.querySelector(".anadirBrocha").addEventListener("click", function () {
+            document.querySelector(".quitarBrocha").disabled = false;
+
+            clicksBrocha++; // clicksBrocha = clicksBrocha + 1;
+            document.querySelector(".numBrochas").innerHTML = clicksBrocha; // AÑADIR al contador: Numeros
+            document.querySelector(".whiteblockBrochas").innerHTML += `<img class="logoProdCompra" src='./iconos/brocha.svg'/>`; // AÑADIR al contador: Logos.  ///// NO funciona con Selector().src y despues del = poniendo "./iconos/brocha.svg";
+        })
+        document.querySelector(".anadirLlave").addEventListener("click", function () {
+            document.querySelector(".quitarLlave").disabled = false;
+
+            clicksLlave++;
+            document.querySelector(".numLlaves").innerHTML = clicksLlave;
+            document.querySelector(".whiteblockLlaves").innerHTML += `<img class="logoProdCompra" src='./iconos/llave.svg'/>`;
+        })
+        document.querySelector(".anadirMartillo").addEventListener("click", function () {
+            document.querySelector(".quitarMartillo").disabled = false;
+
+            clicksMartillo++;
+            document.querySelector(".numMartillos").innerHTML = clicksMartillo;
+            document.querySelector(".whiteblockMartillos").innerHTML += `<img class="logoProdCompra" src='./iconos/martillo.svg'/>`;
+        })
+        document.querySelector(".anadirTronco").addEventListener("click", function () {
+            document.querySelector(".quitarTronco").disabled = false;
+
+            clicksTronco++;
+            document.querySelector(".numTroncos").innerHTML = clicksTronco;
+            document.querySelector(".whiteblockTroncos").innerHTML += `<img class="logoProdCompra" src='./iconos/tronco.svg'/>`;
+        })
+        // QUITAR al contador: Numeros y Logos
+        document.querySelector(".quitarBrocha").addEventListener("click", function () {
+            clicksBrocha--;
+            document.querySelector(".numBrochas").innerHTML = clicksBrocha; // QUITAR al contador: Numeros
+            document.querySelector(".whiteblockBrochas").removeChild(document.querySelector(".whiteblockBrochas").lastElementChild); // QUITAR al contador: Logos. // La estructura es: doc___.removeChild(doc___.lastElementChild)
+            if (clicksBrocha == 0) {
+                document.querySelector(".quitarBrocha").disabled = true;
+            } else {
+                document.querySelector(".quitarBrocha").disabled = false;
+            }
+        })
+        document.querySelector(".quitarLlave").addEventListener("click", function () {
+            clicksLlave--;
+            document.querySelector(".numLlaves").innerHTML = clicksLlave;
+            document.querySelector(".whiteblockLlaves").removeChild(document.querySelector(".whiteblockLlaves").lastElementChild);
+            if (clicksLlave == 0) {
+                document.querySelector(".quitarLlave").disabled = true;
+            } else {
+                document.querySelector(".quitarLlave").disabled = false;
+            }
+        })
+        document.querySelector(".quitarMartillo").addEventListener("click", function () {
+            clicksMartillo--;
+            document.querySelector(".numMartillos").innerHTML = clicksMartillo;
+            document.querySelector(".whiteblockMartillos").removeChild(document.querySelector(".whiteblockMartillos").lastElementChild);
+            if (clicksMartillo == 0) {
+                document.querySelector(".quitarMartillo").disabled = true;
+            } else {
+                document.querySelector(".quitarMartillo").disabled = false;
+            }
+        })
+        document.querySelector(".quitarTronco").addEventListener("click", function () {
+            clicksTronco--;
+            document.querySelector(".numTroncos").innerHTML = clicksTronco;
+            document.querySelector(".whiteblockTroncos").removeChild(document.querySelector(".whiteblockTroncos").lastElementChild);
+            if (clicksTronco == 0) {
+                document.querySelector(".quitarTronco").disabled = true;
+            } else {
+                document.querySelector(".quitarTronco").disabled = false;
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

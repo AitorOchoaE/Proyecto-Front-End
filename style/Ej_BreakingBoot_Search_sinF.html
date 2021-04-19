@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS_Ej_BreakingBoot.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerpart1">
+            <div class="loghead"><img id="logoheader" src=".\style\logoheader.png" alt="Logo Breaking"></div>
+            <div id="menu">
+                <a href="Ej_BreakingBoot_MainPage.html" class="chooseoption mainpage">MAIN PAGE</a>
+                <a href="#" class="chooseoption search">SEARCH</a>
+                <a href="Ej_BreakingBoot_About.html" class="chooseoption about">ABOUT US</a>
+                <a href="Ej_BreakingBoot_Favs.html" class="chooseoption favs">FAVOURITES</a>
+            </div>
+        </div>
+        <div id="headerpart2">
+            <div class="logos">
+                <div class="logo1">
+                    <img id="imgmaintitle1" src=".\style\logoleft.png" alt="Logo WW">
+                </div>
+                <div class="logo2">
+                    <img id="imgmaintitle2" src=".\style\maintitle.png" alt="Logo Breaking">
+                </div>
+                <div class="logo3">
+                    <img id="imgmaintitle3" src=".\style\logoright.png" alt="Logo meth">
+                </div>
+            </div>
+            <h1 class="headersubtitle">Into the Breaking Bad TV show API</h1>
+    </header>
+    <main>
+        <div class="blockcontent search">
+            <h1 id="blocktitle">Search</h1>
+            <div class="container search">
+                <form id="formCharacters">
+                    <div>
+                        <span>The character is...:</span>
+                        <label for="aliveornot">Alive:</label>
+                        <input type="radio" name="aliveornot" class="aliveornot" value="Alive">
+                        <label for="aliveornot">Deceased:</label>
+                        <input type="radio" name="aliveornot" class="aliveornot" value="Deceased">
+                        <label for="aliveornot">Presumed dead:</label>
+                        <input type="radio" name="aliveornot" class="aliveornot" value="Presumed dead">
+                        <label for="aliveornot">Unknown:</label>
+                        <input type="radio" name="aliveornot" class="aliveornot" value="Unknown">
+                    </div>
+                    <div>
+                        <p>Choose the TV show and season/s in which the character appears:</p>
+                        <div id="bothtvshows">
+                            <div class="tvshow">
+                                <div class="logforms"><img id="logoheader" src=".\style\logoBB.png" alt="Logo BB"></div>
+                                <!-- <label for="showname">Breaking Bad:</label> -->
+                                <input type="checkbox" name="showname" class="showname BB" value="Breaking Bad">
+                            </div>
+                            <div class="tvshow">
+                                <div class="logforms"><img id="logoheader" src=".\style\logoBCS.png" alt="Logo BCS">
+                                </div>
+                                <!-- <label for="showname">Better Call Saul:</label> -->
+                                <input type="checkbox" name="showname" class="showname BCS" value="Better Call Saul">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="seasonAllchecks">
+                        <div class="seasonchecks">
+                            <!-- Breaking Bad -->
+                            <div>
+                                <label for="seasonBB">Season 1:</label>
+                                <input type="checkbox" name="seasonBB" class="seasonBB" value="1">
+                            </div>
+                            <div>
+                                <label for="seasonBB">Season 2:</label>
+                                <input type="checkbox" name="seasonBB" class="seasonBB" value="2">
+                            </div>
+                            <div>
+                                <label for="seasonBB">Season 3:</label>
+                                <input type="checkbox" name="seasonBB" class="seasonBB" value="3">
+                            </div>
+                            <div>
+                                <label for="seasonBB">Season 4:</label>
+                                <input type="checkbox" name="seasonBB" class="seasonBB" value="4">
+                            </div>
+                            <div>
+                                <label for="seasonBB">Season 5:</label>
+                                <input type="checkbox" name="seasonBB" class="seasonBB" value="5">
+                            </div>
+                        </div>
+                        <div class="seasonchecks">
+                            <!-- Better Call Saul -->
+                            <div>
+                                <label for="seasonBCS">Season 1:</label>
+                                <input type="checkbox" name="seasonBCS" class="seasonBCS" value="1">
+                            </div>
+                            <div>
+                                <label for="seasonBCS">Season 2:</label>
+                                <input type="checkbox" name="seasonBCS" class="seasonBCS" value="2">
+                            </div>
+                            <div>
+                                <label for="seasonBCS">Season 3:</label>
+                                <input type="checkbox" name="seasonBCS" class="seasonBCS" value="3">
+                            </div>
+                            <div>
+                                <label for="seasonBCS">Season 4:</label>
+                                <input type="checkbox" name="seasonBCS" class="seasonBCS" value="4">
+                            </div>
+                            <div>
+                                <label for="seasonBCS">Season 5:</label>
+                                <input type="checkbox" name="seasonBCS" class="seasonBCS" value="5">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div id="subbutcont">
+                        <input type="submit" value="Filter characters" class="submitbutton">
+                        <button class="refreshbutton">Start a new search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container findings"></div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="loghead"><img id="logoheader" src=".\style\logoheader.png" alt="Logo BB"></div>
+        <div id="footertextblock">
+            <p class="plaintext">(C) All Rights Reserved.</p>
+            <span class="plaintext"> Created by </span>
+            <span class="plaintext" style="color: rgb(255, 153, 0)">AOE Bootcamp</span>
+            <span class="plaintext"> Source: </span><span class="plaintext"
+                style="color:rgb(255, 153, 0)">https://www.breakingbadapi.com/api/</span>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    // Al principio disable todas las temps (BB y BCS).
+    let arrayBB = [];
+    arrayBB = document.querySelectorAll(".seasonBB");
+    for (let i = 0; i < arrayBB.length; i++) {
+        arrayBB[i].disabled = true;
+    }
+    let arrayBCS = [];
+    arrayBCS = document.querySelectorAll(".seasonBCS");
+    for (let i = 0; i < arrayBCS.length; i++) {
+        arrayBCS[i].disabled = true;
+    }
+
+    // Disable o no seleccion de temporadas segun seleccion de serie/s.
+    document.querySelector(".showname.BB").addEventListener("change", function () {
+        if (this.checked == true) {
+            for (let i = 0; i < arrayBB.length; i++) {
+                arrayBB[i].disabled = false; //habilitar los checkbox
+            }
+        }
+        else {
+            for (let i = 0; i < arrayBB.length; i++) {
+                arrayBB[i].disabled = true; //deshabilitar los checkbox
+                arrayBB[i].checked = false; //quitar check de los checkbox
+            }
+        }
+    })
+    document.querySelector(".showname.BCS").addEventListener("change", function () {
+        if (this.checked == true) {
+            for (let i = 0; i < arrayBCS.length; i++) {
+                arrayBCS[i].disabled = false;
+            }
+        }
+        else {
+            for (let i = 0; i < arrayBCS.length; i++) {
+                arrayBCS[i].disabled = true;
+                arrayBCS[i].checked = false;
+            }
+        }
+    })
+
+
+    let aliveornotRadio;
+    let shownameChecked;
+    let arrayshownameChecked = [];
+    let arrayseasonBBChecked = [];
+    let arrayseasonBCSChecked = [];
+    let str = [];
+
+    function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.lastChild);
+        }
+    }
+
+    document.querySelector(".refreshbutton").addEventListener("click", function () {
+        location.reload();
+    })
+
+    document.querySelector("#formCharacters").addEventListener("submit", function (e) {
+        e.preventDefault();
+        // debugger;
+        // removeAllChildNodes(document.querySelector(".container.findings")); //el parent entre parentesis.
+        // document.querySelector(".container.findings").innerHTML = ""; //vaciamos el container al principio.
+        // debugger;
+        //1. Valor del radiobutton.
+        aliveornotRadio = document.querySelector('input[type=radio][name=aliveornot]:checked').value;
+        //2. Valor/es del checkbox del TV show.
+        shownameChecked = document.querySelectorAll('input[type=checkbox][name=showname]:checked'); //nodeList.
+        for (let i = 0; i < shownameChecked.length; i++) {
+            arrayshownameChecked.push(shownameChecked[i].value);
+        }
+        //3. Valor/es del checkbox de temp/s de BB.
+        seasonBBChecked = document.querySelectorAll('input[type=checkbox][name=seasonBB]:checked');
+        for (let i = 0; i < seasonBBChecked.length; i++) {
+            arrayseasonBBChecked.push(parseInt(seasonBBChecked[i].value));
+        }
+        //4. Valor/es del checkbox de temp/s de BCS.
+        seasonBCSChecked = document.querySelectorAll('input[type=checkbox][name=seasonBCS]:checked');
+        for (let i = 0; i < seasonBCSChecked.length; i++) {
+            arrayseasonBCSChecked.push(parseInt(seasonBCSChecked[i].value));
+        }
+
+        llamadaAPIchar(aliveornotRadio, arrayshownameChecked, arrayseasonBBChecked, arrayseasonBCSChecked);
+    })
+
+    let arraycheckboxes = [];
+    function llamadaAPIchar(aliveornotRadio, arrayshownameChecked, arrayseasonBBChecked, arrayseasonBCSChecked) {
+        let data;
+        // let arrayFilteredNames = [];
+
+        let arrayCategories = [];
+        // debugger;
+        axios.get('https://breakingbadapi.com/api/characters')
+            .then(function (response) {
+                let arrayFilteredChars = [];
+                data = response.data;
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i].status == aliveornotRadio) {
+                        for (let j = 0; j < arrayshownameChecked.length; j++) { //2 series.
+                            if (data[i].category.includes(",")) {  //// Category:  "Breaking Bad, Better Call Saul" (1 string), creamos 1 array y los separamos en 2 strings. P.e. en: "char_id": 7, "name": "Mike Ehrmantraut".
+                                let poscoma = data[i].category.indexOf(",");
+                                arrayCategories[0] = data[i].category.substring(0, poscoma);
+                                arrayCategories[1] = data[i].category.substring(poscoma + 2);
+                                for (let l = 0; l < arrayCategories.length; l++) {
+                                    if (arrayCategories[l] == arrayshownameChecked[j]) {
+                                        if (arrayshownameChecked[j] == document.querySelector(".showname.BB").value) { // Breaking Bad.
+                                            for (let k = 0; k < data[i].appearance.length; k++) {
+                                                if (arrayseasonBBChecked.includes(data[i].appearance[k])) { //si el array de los chequeados incluye el num de la temporada.
+                                                    if (!arrayFilteredChars.includes(data[i])) { //si el personaje no está ya incluido en el array.
+                                                        arrayFilteredChars.push(data[i]);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        if (arrayshownameChecked[j] == document.querySelector(".showname.BCS").value) { //Better Call Saul.
+                                            for (let k = 0; k < data[i].better_call_saul_appearance.length; k++) {
+                                                if (arrayseasonBCSChecked.includes(data[i].better_call_saul_appearance[k])) { //si el array de los chequeados incluye el num de la temporada.
+                                                    if (!arrayFilteredChars.includes(data[i])) {
+                                                        arrayFilteredChars.push(data[i]);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else if (data[i].category == arrayshownameChecked[j]) { //// 1 sola serie en category.
+                                if (arrayshownameChecked[j] == document.querySelector(".showname.BB").value) { // Breaking Bad.
+                                    for (let k = 0; k < data[i].appearance.length; k++) {
+                                        if (arrayseasonBBChecked.includes(data[i].appearance[k])) { //si el array de los chequeados incluye el num de la temporada.
+                                            if (!arrayFilteredChars.includes(data[i])) { //si el personaje no está ya incluido en el array.
+                                                arrayFilteredChars.push(data[i]);
+                                            }
+                                        }
+                                    }
+                                }
+                                if (arrayshownameChecked[j] == document.querySelector(".showname.BCS").value) { //Better Call Saul.
+                                    for (let k = 0; k < data[i].better_call_saul_appearance.length; k++) {
+                                        if (arrayseasonBCSChecked.includes(data[i].better_call_saul_appearance[k])) { //si el array de los chequeados incluye el num de la temporada.
+                                            if (!arrayFilteredChars.includes(data[i])) {
+                                                arrayFilteredChars.push(data[i]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (arrayFilteredChars.length == 0) {
+                    let nochar = document.createElement("p");
+                    nochar.innerHTML = "There is no character under your specifications";
+                    document.querySelector(".container.findings").appendChild(nochar);
+                }
+
+                console.log(arrayFilteredChars);
+                console.log(arrayFilteredChars.length);
+
+                // debugger;
+
+                for (let i = 0; i < arrayFilteredChars.length; i++) {
+                    str.push((arrayFilteredChars[i].name.replace(/ /g, "")).replace(".", "")); //deletes ALL spaces y puntos de la class.
+
+                    // Creamos contenedor del personaje.
+                    let divchar = document.createElement("div");
+                    divchar.className = "containerchar";
+                    document.querySelector(".container.findings").appendChild(divchar);
+                    // Creamos contenedor de la imagen.
+                    let imgcharCont = document.createElement("div");
+                    imgcharCont.className = "imgcharcontainer";
+                    divchar.appendChild(imgcharCont);
+
+                    // Insertamos imagen.
+                    let imgchar = document.createElement("img");
+                    imgchar.src = arrayFilteredChars[i].img;
+                    imgchar.className = "imgchar"
+                    imgcharCont.appendChild(imgchar);
+                    // Nombre.
+                    let namechar = document.createElement("p");
+                    namechar.innerHTML = "Name: " + arrayFilteredChars[i].name;
+                    divchar.appendChild(namechar);
+                    // Nick.
+                    let nickchar = document.createElement("p");
+                    nickchar.innerHTML = "Nickname: " + arrayFilteredChars[i].nickname;
+                    divchar.appendChild(nickchar);
+                    // Ocupacion.
+                    let occuchar = document.createElement("p");
+                    occuchar.innerHTML = "Occupation:";
+                    let occulistchar = document.createElement("ul");
+                    for (let j = 0; j < arrayFilteredChars[i].occupation.length; j++) {
+                        let listitem = document.createElement("li");
+                        listitem.innerHTML = arrayFilteredChars[i].occupation[j];
+                        occulistchar.appendChild(listitem);
+                    }
+                    divchar.appendChild(occuchar);
+                    divchar.appendChild(occulistchar);
+                    // Actor/actriz.
+                    let actchar = document.createElement("p");
+                    actchar.innerHTML = "Portrayed: " + arrayFilteredChars[i].portrayed;
+                    divchar.appendChild(actchar);
+                    // Serie.
+                    let catchar = document.createElement("p");
+                    catchar.innerHTML = "TV show: " + arrayFilteredChars[i].category;
+                    divchar.appendChild(catchar);
+                    // Creamos Checkbox de Favorito.
+                    let labelfav = document.createElement("label");
+                    labelfav.innerHTML = "Check as favorite! ";
+                    labelfav.className = "labelfav";
+                    divchar.appendChild(labelfav);
+                    let checkfav = document.createElement("input");
+                    checkfav.type = "checkbox";
+                    checkfav.className = "checkfavclass";
+                    checkfav.id = str[i]; //cada checkbox tiene su nombre como id.
+                    divchar.appendChild(checkfav);
+                }
+
+                arraycheckboxes = document.querySelectorAll(".checkfavclass");
+
+                // Creamos array de los objetos seleccionados como fav.
+                let arrayFavsChecked = [];
+                for (let j = 0; j < arraycheckboxes.length; j++) {
+                    arraycheckboxes[j].addEventListener('change', function () {
+                        // debugger;
+                        if (this.checked) {
+                            let idName = this.id;
+                            for (let i = 0; i < arrayFilteredChars.length; i++) {
+                                if (idName == str[i]) {
+                                    if (!arrayFavsChecked.includes(arrayFilteredChars[i])) { //si no está incluido en favs.
+                                        arrayFavsChecked.push(arrayFilteredChars[i]);
+                                    }
+                                }
+                            }
+                            // console.log("arrayFavsChecked");
+                            // console.log(arrayFavsChecked);
+                            // let arrayFavsChecked2 = JSON.stringify(arrayFavsChecked)
+                            // console.log("arrayFavsChecked2");
+                            // console.log(arrayFavsChecked2);
+
+                            funclocstor(arrayFavsChecked);
+                        }
+                    })
+                }
+            })
+    };
+
+
+    function funclocstor(arrayfavs) {
+        // debugger;
+        let strfavs;
+        if (localStorage.getItem("Fav characters")) { //si puede acceder al locstorage con esa clave
+            let localCharacters = localStorage.getItem("Fav characters"); //cogemos el string guardado en locstorage.
+            for (let j = 0; j < arrayfavs.length; j++) { //arrayfavs está como array.
+                console.log(arrayfavs[j]);
+                strfavs = JSON.stringify(arrayfavs[j]); //pasamos a string.
+                if (!localCharacters.includes(strfavs)) { //si NO está ya incluido ningun valor del arrayfavs en localCharacters
+                    localCharacters = JSON.parse(localCharacters); //pasamos a array.
+                    localCharacters.push(arrayfavs[j]);
+                    localCharacters = JSON.stringify(localCharacters); //pasamos a string.
+                    localStorage.setItem("Fav characters", localCharacters);
+                }
+            }
+        }
+        else { //si no existe el locstorage con esa clave
+            strfavs = JSON.stringify(arrayfavs); //convertimos el array a un string
+            localStorage.setItem("Fav characters", strfavs); //Guardamos el string en el localstorage, asociado a una clave.
+        }
+
+        locstorToFav();
+    }
+
+    function locstorToFav(){
+        let dataLocalStorage = localStorage.getItem("Fav characters"); //recuperamos el string de favs.
+        dataLocalStorage = JSON.parse(dataLocalStorage); //pasamos a array.
+    }
+
+
+
+    //     if (localCharacters != nameCoct){
+    //                 localCharacters = JSON.parse(localCharacters);
+    //                 localCharacters.push(nameCoct);
+    //                 localCharacters = JSON.stringify(localCharacters);
+    //                 localStorage.setItem("Fav characters", localCharacters);
+    //             }else{
+    //                 ///////////////;
+    //             }
+    //         // }
+
+
+    //     arrayfavs = JSON.stringify(arrayfavs); //convertimos el array a un string
+    //     localStorage.setItem("Fav characters", arrayfavs); //Guardamos el string en el localstorage, asociado a una clave.
+    //     let datosDelLocalStorage = localStorage.getItem("Fav characters");
+    //     console.log("datosDelLocalStorage en string:");
+    //     console.log(datosDelLocalStorage);
+    //     datosDelLocalStorage = JSON.parse(datosDelLocalStorage); //convertimos el string en objeto.
+    //     console.log("datosDelLocalStorage en objeto:");
+    //     console.log(datosDelLocalStorage);
+    // }
+
+    //////////////////////////////////////////
+    // document.querySelector("#checkIn").addEventListener("change", function (er) {
+    // er.preventDefault();
+    // if (makeCheck.checked === true) {
+    //     alert("aqui");
+    //     if (localStorage.getItem("cocteles")) {
+    //         let localCocteles = localStorage.getItem("cocteles");
+    //         localCocteles = JSON.parse(localCocteles);
+    //         for (let i = 0; i < localCocteles.length; i++) {
+    //             if (localCocteles != nameCoct){
+    //                 localCocteles.push(nameCoct);
+    //                 localCocteles = JSON.stringify(localCocteles);
+    //                 localStorage.setItem("cocteles", localCocteles);
+    //             }else{
+    //                 break;
+    //             }
+    //         }
+    //     } else {
+    //         favoritos.push(nameCoct);
+    //         favoritos = JSON.stringify(favoritos);
+    //         localStorage.setItem("cocteles", favoritos);
+    //     }
+    // }
+
+
+
+
+    // let arrayfavsChecked = [];
+    // arrayfavsChecked = document.querySelectorAll(".checkfav");
+    // for (let i = 0; i < arrayfavsChecked.length; i++){
+
+    // }
+
+
+
+
+    //     shownameChecked = document.querySelectorAll('input[type=checkbox][name=showname]:checked'); //nodeList.
+    //     for (let i = 0; i < shownameChecked.length; i++) {
+    //         arrayshownameChecked.push(shownameChecked[i].value);
+    //     }
+
+
+    //     let arrayBCS = [];
+    //     arrayBCS = document.querySelectorAll(".seasonBCS");
+    //     for (let i = 0; i < arrayBCS.length; i++) {
+    //         arrayBCS[i].disabled = true;
+    //     }
+
+    //     let arrayFavChars = [];
+    //     if (document.querySelectorAll(".checkfav").checked) {  // favChecked = document.querySelectorAll(".checkfav").checked; //true or false
+    //         arrayFavChars.push(arrayFilteredChars[i]);
+    //     }
+
+
+
+
+
+
+</script>
+
+</html>

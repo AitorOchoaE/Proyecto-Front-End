@@ -1,0 +1,451 @@
+*{
+    font-family: "Cambria", "Helvetica", sans-serif;
+}
+body{
+    /* width: 100%; */
+    min-height: 100vh;
+    margin: 0;
+    /* justify-self: center; no necesario porque en este caso ocupa width 100% */
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-image: url("./style/background.jpg");
+    background-size: auto;
+    margin: 0;
+}
+#headerpart1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loghead{
+    width: 4rem;
+    margin-right: 2rem;
+}
+#logoheader{
+    width: 100%;
+    height: auto;
+}
+#menu{
+    display: flex;
+}
+.chooseoption{
+    font-size: .9rem;
+    background-color: rgb(5, 104, 54);
+    color: white;
+    padding: .7rem 1rem;
+    margin: 0 .5rem;
+    border: solid white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none; /*quitar subrayado*/
+}
+.chooseoption:hover{
+    background-color: rgb(4, 58, 31);
+}
+.chooseoption:active{
+    background-color: rgb(106, 185, 14);
+}
+
+#headerpart2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 20rem;
+    margin-right: 20rem; */
+    margin-bottom: 1rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.637);
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.664) inset;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo1, .logo3{
+    margin: .4rem 1.5rem 0 1.5rem;
+    width: 4rem;
+}
+.logo2{
+    margin: .4rem 1.5rem 0 1.5rem;
+    width: 12rem;
+}
+#imgmaintitle1, #imgmaintitle3{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+#imgmaintitle2{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.headersubtitle{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* MAIN */
+main{
+    background-image: url("./style/background6.jpg");
+    background-size: auto;
+    margin: 0;
+    
+}
+.blockcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 1rem .7rem 1rem;
+    margin: .2rem 3rem;
+    border-left: solid .2rem white;
+    border-right: solid .2rem white;
+    background-color: rgba(45, 100, 49, 0.671);
+    /* min-height: 282px; !!!!!!!!!*/
+}
+#blocktitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(238, 255, 1);
+    text-align: center;
+}
+.blockcontent.mainpage h2{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+.container.mainpage{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    margin: .3rem;
+    padding: 0;
+}
+.imgcontainer>img{
+    display: block;
+    max-width: 100%;
+    height: 10rem;
+    margin: 0;
+    object-fit: cover;
+}
+
+
+/* PESTAÑA SEARCH */
+#formCharacters{
+    margin-top: 1rem;
+}
+#bothtvshows{
+    display: flex;
+    justify-content: space-around;
+}
+.tvshow{
+    display: flex;
+    align-items: center;
+}
+.logforms{
+    width: 10vw;
+    margin-right: 1rem;
+}
+#seasonAllchecks{
+    display: flex;
+    justify-content: space-around;
+}
+.seasonchecks{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+#subbutcont{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.submitbutton, .refreshbutton{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(210, 224, 4);
+    color: black;
+    padding: .7rem 1.2rem .7rem 1.2rem;
+    border: solid black;
+    border-radius: 20px;
+    margin: 0 1rem;
+}
+.submitbutton:hover{
+    background-color: rgb(19, 34, 5);
+    color: white;
+}
+.submitbutton:active{
+    background-color: rgb(110, 197, 10);
+}
+.nocharclass{
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.container.findings, .container.favs{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    min-width: 80vh;
+    justify-content: center;
+}
+.containerchar{  /*.container.findings>div{  contenedor del personaje */
+    /* display: flex; */
+    width: 13vw;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: solid white .1rem;
+    border-radius: 10px;
+    margin: .5rem .2rem;
+    padding: 1rem;
+    background-color: rgba(160, 134, 134, 0.479);
+}
+/* .imgcharcontainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: .3rem;
+    padding: 0;
+} */
+.imgchar{  /*.container.findings img{  imagen */
+    display: block;
+    max-width: 100%;
+    width: 40vw;
+    height: 35vh;
+    margin: 0;
+    object-fit: cover;
+}
+.labelfav{
+    color: rgb(238, 255, 1);
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+
+
+
+
+/* PESTAÑA ABOUT */
+.container.about{
+    display: flex;
+}
+.imgcontainerabout{
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 2rem;
+    /* width: 40%; */
+}
+.imgcontainerabout>img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+.textblockabout{
+    display: flex;
+    flex-direction: column;
+}
+.subtitleabout{
+    font-size: 1.1rem;
+    font-style: italic;
+    color:rgb(238, 255, 1)
+}
+.textabout{
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: url("./style/background5.jpg");
+    margin: 0;
+}
+footer .plaintext{
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 769px) {  /*Tablet (segun barra / movil modo horizontal/landscape*/
+    /* MAIN */
+    body{
+        width: 100%;
+    }
+    .blockcontent{
+        margin: .2rem 2rem;
+    }
+    /* PESTAÑA SEARCH */
+    .containerchar{  /* contenedor del personaje */
+        width: 28vw;
+        margin: .8rem;
+    }
+    .container.search, .container.favs{
+        min-height: 485px; /*!!!!!!!!!*/
+    }
+    .logforms{
+        width: 18vw;
+    }
+    /* PESTAÑA ABOUT */
+    .imgcontainerabout{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {  /*Mobile L 425px*/
+    /* HEADER */
+    .loghead{
+        display: none;
+    }
+    .chooseoption{
+        font-size: .7rem;
+        padding: .5rem;
+        margin: .6rem .4rem;
+    }
+    .logo1, .logo3{
+        display: none;
+    }
+    /* MAIN */
+        .blockcontent{
+        margin: .2rem 1rem;
+    }
+    .container.search, .container.favs{
+        min-height: 310px; /*!!!!!!!!!*/
+    }
+    .headersubtitle{
+        display: none;
+    }
+    .imgcontainer{
+        max-width: 100%;
+    }
+    .imgcontainer>img{
+        height: 20rem;
+    }
+    /* PESTAÑA SEARCH */
+    .containerchar{  /* contenedor del personaje */
+        width: 33vw;
+        margin: .2rem;
+    }
+    .submitbutton, .refreshbutton{
+        font-size: .8rem;
+        padding: .6rem;
+        margin: .7rem;
+    }
+    .nocharclass{
+        font-size: 1rem;
+        width: 70vw;
+    }
+    /* FOOTER */
+    footer .plaintext{
+        font-size: .9rem;
+        margin: 0 .2rem;
+    }
+}
+
+/* @media screen and (max-width: 600px) {   */
+    /*tamaño intermedio*/
+    /* HEADER */
+    /* .loghead{
+        display: none;
+    }
+    .chooseoption{
+        font-size: .7rem;
+        padding: .5rem;
+        margin: .6rem .4rem;
+    } */
+    
+    /* PESTAÑA SEARCH */
+    /* .containerchar{ 
+        width: 17vw;
+    }
+    .container.search, .container.favs{
+        min-height: 335px; !!!!!!!!!
+    }
+    .submitbutton, .refreshbutton{
+        font-size: .8rem;
+        padding: .6rem;
+        margin: .7rem;
+    } */
+
+    /* FOOTER */
+    /* footer .plaintext{
+        font-size: .9rem;
+        margin: 0 .2rem;
+    } */
+    /* PESTAÑA ABOUT */
+
+/* } */
+
+/* @media screen and (max-width: 481px) {   */
+    /*movil modo vertical(???)*/
+    /* HEADER */
+    /* .logo1, .logo3{
+        display: none;
+    }
+    .headersubtitle{
+        font-size: .9rem;
+        width: 10rem;
+    } */
+    /* MAIN */
+    /* .blockcontent{
+        margin: .2rem 1rem;
+    } */
+    /* PESTAÑA SEARCH */
+    /* .containerchar{ 
+        width: 27vw;
+        margin: .2rem;
+    } */
+    /* .container.search, .container.favs{
+        min-height: 335px; !!!!!!!!! */
+    /* }
+} */
+
+
+
+
+/* .imgcanyonContainer{
+    min-width: 60px;
+    min-height: 21.87;
+} */
+/* .imgcanyon{ */
+    /* width: 960px; NO DIMENSIONAR IMÁGENES, SINO MEJOR SU CONTENEDOR!!! */
+    /* max-width: 100%;
+    height: auto;
+    display: block;
+} */

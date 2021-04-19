@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS_Ej_BreakingBoot.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerpart1">
+            <div class="loghead"><img id="logoheader" src=".\style\logoheader.png" alt="Logo Breaking"></div>
+            <div id="menu">
+                <a href="Ej_BreakingBoot_MainPage.html" class="chooseoption mainpage">MAIN PAGE</a>
+                <a href="Ej_BreakingBoot_Search.html" class="chooseoption search">SEARCH</a>
+                <a href="Ej_BreakingBoot_About.html" class="chooseoption about">ABOUT US</a>
+                <a href="#" class="chooseoption favs">FAVOURITES</a>
+            </div>
+        </div>
+        <div id="headerpart2">
+            <div class="logos">
+                <div class="logo1">
+                    <img id="imgmaintitle1" src=".\style\logoleft.png" alt="Logo WW">
+                </div>
+                <div class="logo2">
+                    <img id="imgmaintitle2" src=".\style\maintitle.png" alt="Logo Breaking">
+                </div>
+                <div class="logo3">
+                    <img id="imgmaintitle3" src=".\style\logoright.png" alt="Logo meth">
+                </div>
+            </div>
+            <h1 class="headersubtitle">Into the Breaking Bad TV show API</h1>
+    </header>
+    <main>
+        <div class="blockcontent favs">
+            <h1 id="blocktitle">Favourites</h1>
+            <div class="container favs"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="loghead"><img id="logoheader" src=".\style\logoheader.png" alt="Logo BB"></div>
+        <div id="footertextblock">
+            <p class="plaintext">(C) All Rights Reserved.</p>
+            <span class="plaintext"> Created by </span>
+            <span class="plaintext" style="color: rgb(255, 153, 0)">AOE Bootcamp</span>
+            <span class="plaintext"> Source: </span><span class="plaintext"
+                style="color:rgb(255, 153, 0)">https://www.breakingbadapi.com/api/</span>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    let dataLocalStorage = localStorage.getItem("Fav characters"); //recuperamos el string de favs.
+    dataLocalStorage = JSON.parse(dataLocalStorage); //pasamos a array.
+    for (let i = 0; i < dataLocalStorage.length; i++) {
+        
+        // Creamos contenedor del personaje.
+        let divchar = document.createElement("div");
+        divchar.className = "containerchar";
+        document.querySelector(".container.favs").appendChild(divchar);
+        // Creamos contenedor de la imagen.
+        let imgcharCont = document.createElement("div");
+        imgcharCont.className = "imgcharcontainer";
+        divchar.appendChild(imgcharCont);
+
+        // Insertamos imagen.
+        let imgchar = document.createElement("img");
+        imgchar.src = dataLocalStorage[i].img;
+        imgchar.className = "imgchar"
+        imgcharCont.appendChild(imgchar);
+        // Nombre.
+        let namechar = document.createElement("p");
+        namechar.innerHTML = "Name: " + dataLocalStorage[i].name;
+        divchar.appendChild(namechar);
+        // Nick.
+        let nickchar = document.createElement("p");
+        nickchar.innerHTML = "Nickname: " + dataLocalStorage[i].nickname;
+        divchar.appendChild(nickchar);
+        // Ocupacion.
+        let occuchar = document.createElement("p");
+        occuchar.innerHTML = "Occupation:";
+        let occulistchar = document.createElement("ul");
+        for (let j = 0; j < dataLocalStorage[i].occupation.length; j++) {
+            let listitem = document.createElement("li");
+            listitem.innerHTML = dataLocalStorage[i].occupation[j];
+            occulistchar.appendChild(listitem);
+        }
+        divchar.appendChild(occuchar);
+        divchar.appendChild(occulistchar);
+        // Actor/actriz.
+        let actchar = document.createElement("p");
+        actchar.innerHTML = "Portrayed: " + dataLocalStorage[i].portrayed;
+        divchar.appendChild(actchar);
+        // Serie.
+        let catchar = document.createElement("p");
+        catchar.innerHTML = "TV show: " + dataLocalStorage[i].category;
+        divchar.appendChild(catchar);
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,11 @@
+
+
+		<form action=".\Ej_BreakingBoot.html">
+                    <input type="submit" class="chooseoption mainpage" value="MAIN PAGE">
+                </form>
+                <form action=".\Ej_BreakingBoot_Search.html">
+                    <input type="submit" class="chooseoption search" value="SEARCH">
+                </form>
+                <form action=".\Ej_BreakingBoot_About.html">
+                    <input type="submit" class="chooseoption about" value="ABOUT">
+                </form>
